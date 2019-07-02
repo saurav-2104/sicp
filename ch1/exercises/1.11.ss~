@@ -1,0 +1,4 @@
+#lang sicp
+(define (recur n)
+  (if (< n 3) n
+      (+ (recur (- n 1)) (* 2 (recur (- n 2))) (* 3 (recur (- n 3))))))
